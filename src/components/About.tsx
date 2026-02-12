@@ -10,24 +10,24 @@ const About = () => {
 
   const highlights = [
     {
-      icon: '🌱',
-      title: 'Wide Plant Variety',
-      description: 'Both indoor and outdoor plants with exotic and local varieties'
+      icon: '🌳',
+      title: 'Complete Landscaping',
+      description: 'Land clearing, levelling, soil preparation, and planting of all plant varieties'
     },
     {
-      icon: '🌿',
-      title: 'Organic Products',
-      description: 'Premium organic soil, fertilizers, and eco-friendly gardening supplies'
+      icon: '💧',
+      title: 'Irrigation Systems',
+      description: 'Drip irrigation, sprinklers, timer-based systems and water conservation'
     },
     {
-      icon: '🏡',
-      title: 'Landscaping Services',
-      description: 'Professional landscaping with modern ideas at affordable prices'
+      icon: '🏢',
+      title: 'Indoor Plantation',
+      description: 'Refreshing indoor spaces with suitable plants, planters, and maintenance'
     },
     {
-      icon: '📦',
-      title: 'Plant Rental',
-      description: 'Monthly rental plants for offices and event decoration services'
+      icon: '🌲',
+      title: 'Miyawaki Forests',
+      description: 'Eco-friendly dense forest plantation using the Miyawaki method'
     }
   ];
 
@@ -36,27 +36,37 @@ const About = () => {
       <div className="container">
         <h2 className="section-title">About Us</h2>
         <p className="section-subtitle">
-          Vijayawada's trusted wholesale plant nursery since over a decade
+          The Green World Creators — Transforming spaces into living works of art
         </p>
 
         <div className="about-content">
           <div className="about-info">
             <div className="about-text">
-              <h3>Your Green Paradise in Vijayawada</h3>
+              <h3>Standard Green Solutions</h3>
               <p>
-                <strong>Standard Plant Shoppe</strong> (స్టాండర్డ్ ప్లాంట్ షాప్పి) is a premier wholesale 
-                plant nursery located in the heart of Vijayawada, Andhra Pradesh. We are passionate 
-                about bringing nature closer to homes and offices.
+                <strong>Standard Green Solutions</strong>, based in Vijayawada, is a trusted name in 
+                comprehensive plantation and landscaping solutions. We specialise in creating vibrant 
+                green spaces that blend beauty, sustainability, and functionality.
               </p>
               <p>
-                Our proprietor, <strong>Mr. Srinivasa Rao</strong>, is known for his cordial nature and 
-                deep knowledge of plants. Our staff takes pride in explaining about the wide variety 
-                of plants and providing expert guidance on plant care.
+                From luxurious gardens and vertical landscapes to innovative water features and 
+                eco-friendly Miyawaki forests, we transform outdoor spaces into living works of art. 
+                Our expertise extends to irrigation systems, turfing, roof gardens, pergolas, and more.
               </p>
               <p>
-                We offer everything a garden needs - from exotic indoor plants and flowering varieties 
-                to succulents, outdoor plants, pots, seeding trays, potting mix, and organic soil. 
-                While our prices reflect premium quality, our plants live longer unlike others.
+                At Standard Green Solutions, we believe in nurturing nature while enhancing the 
+                aesthetic and environmental value of every space. Every project is meticulously 
+                designed and executed with precision.
+              </p>
+            </div>
+
+            <div className="about-mission">
+              <h4>🎯 Our Mission</h4>
+              <p>
+                To create sustainable and aesthetically pleasing green spaces that enhance the 
+                environment and improve quality of life. We are committed to innovative plantation 
+                and landscaping solutions, using eco-friendly practices and modern techniques to 
+                transform every outdoor space into a thriving, harmonious, and vibrant ecosystem.
               </p>
             </div>
 

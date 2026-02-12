@@ -13,12 +13,12 @@ const Footer = () => {
   ];
 
   const services = [
-    'Indoor Plants',
-    'Outdoor Plants',
-    'Organic Soil',
-    'Landscaping',
-    'Plant Rental',
-    'Event Decoration',
+    'Complete Landscaping',
+    'Irrigation Systems',
+    'Indoor Plantation',
+    'Miyawaki Forests',
+    'Vertical Gardens',
+    'Maintenance Contracts',
   ];
 
   return (
@@ -30,14 +30,14 @@ const Footer = () => {
               <a href="#home" className="footer-logo">
                 <span className="logo-icon">🌿</span>
                 <div className="logo-text">
-                  <span className="logo-main">Standard Plant Shoppe</span>
-                  <span className="logo-telugu">స్టాండర్డ్ ప్లాంట్ షాప్పి</span>
+                  <span className="logo-main">Standard Green Solutions</span>
+                  <span className="logo-telugu">స్టాండర్డ్ గ్రీన్ సొల్యూషన్స్</span>
                 </div>
               </a>
+              <p className="footer-tagline">The Green World Creators....</p>
               <p className="footer-description">
-                Vijayawada's premier wholesale plant nursery offering exotic indoor & outdoor 
-                plants, organic soil, landscaping services, and eco-friendly gardening products 
-                since over a decade.
+                Vijayawada's trusted name in comprehensive plantation and landscaping solutions. 
+                We transform outdoor spaces into vibrant, sustainable, and functional green spaces.
               </p>
               <div className="footer-rating">
                 <span className="stars">⭐⭐⭐⭐⭐</span>
@@ -82,6 +82,10 @@ const Footer = () => {
                 <a href="tel:+919490658259">+91 94906 58259</a>
               </div>
               <div className="contact-item">
+                <span className="contact-icon">✉️</span>
+                <a href="mailto:sr.standard@yahoo.com">sr.standard@yahoo.com</a>
+              </div>
+              <div className="contact-item">
                 <span className="contact-icon">🕐</span>
                 <p>Open Daily: 9 AM - 8 PM</p>
               </div>
@@ -102,10 +106,10 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} Standard Plant Shoppe. All rights reserved.
+              © {currentYear} Standard Green Solutions. All rights reserved.
             </p>
             <p className="tagline">
-              🌱 Bringing Nature Closer to You Since 2010 🌱
+              🌱 The Green World Creators 🌱
             </p>
             <div className="footer-badges">
               <span className="badge">🌿 Eco-Friendly</span>

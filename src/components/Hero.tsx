@@ -68,28 +68,30 @@ const Hero = () => {
             <span>4.5 Rating</span>
           </div>
           <h1 className="hero-title">
-            Welcome to<br />
-            <span className="highlight">Standard Plant Shoppe</span>
+            <span className="highlight">Standard Green Solutions</span>
           </h1>
+          <p className="hero-tagline">
+            The Green World Creators....
+          </p>
           <p className="hero-subtitle">
-            స్టాండర్డ్ ప్లాంట్ షాప్పి
+            స్టాండర్డ్ గ్రీన్ సొల్యూషన్స్
           </p>
           <p className="hero-description">
-            Vijayawada's Premier Wholesale Plant Nursery - Your one-stop destination for 
-            exotic indoor & outdoor plants, organic soil, and eco-friendly gardening products.
+            Vijayawada's trusted name in comprehensive plantation and landscaping solutions. 
+            We transform outdoor spaces into vibrant, sustainable, and functional green spaces.
           </p>
           <div className="hero-features">
             <div className="hero-feature">
-              <span className="feature-icon">🌱</span>
-              <span>Indoor & Outdoor Plants</span>
+              <span className="feature-icon">🌳</span>
+              <span>Complete Landscaping</span>
             </div>
             <div className="hero-feature">
-              <span className="feature-icon">🌿</span>
-              <span>Organic Soil</span>
+              <span className="feature-icon">💧</span>
+              <span>Irrigation Systems</span>
             </div>
             <div className="hero-feature">
-              <span className="feature-icon">🏡</span>
-              <span>Landscaping Services</span>
+              <span className="feature-icon">🌲</span>
+              <span>Miyawaki Forests</span>
             </div>
           </div>
           <div className="hero-buttons">

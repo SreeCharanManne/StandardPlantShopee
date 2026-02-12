@@ -41,6 +41,14 @@
   color: var(--accent-color);
 }
 
+.footer-tagline {
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 .footer-description {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;

@@ -71,6 +71,20 @@
   color: var(--secondary-color);
 }
 
+.email-link {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.email-link:hover {
+  color: var(--secondary-color);
+}
+
 .phone-note {
   font-size: 0.85rem;
   color: var(--light-text);

@@ -26,6 +26,29 @@
   line-height: 1.8;
 }
 
+.about-mission {
+  background: linear-gradient(135deg, var(--light-green), rgba(255, 255, 255, 0.8));
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.about-mission h4 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.about-mission p {
+  color: var(--light-text);
+  line-height: 1.8;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
 .about-features {
   display: grid;
   grid-template-columns: 1fr 1fr;

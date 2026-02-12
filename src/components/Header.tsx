@@ -28,8 +28,8 @@ const Header = () => {
         <a href="#home" className="logo">
           <span className="logo-icon">🌿</span>
           <div className="logo-text">
-            <span className="logo-main">Standard Plant Shoppe</span>
-            <span className="logo-telugu">స్టాండర్డ్ ప్లాంట్ షాప్పి</span>
+            <span className="logo-main">Standard Green Solutions</span>
+            <span className="logo-telugu">స్టాండర్డ్ గ్రీన్ సొల్యూషన్స్</span>
           </div>
         </a>
 

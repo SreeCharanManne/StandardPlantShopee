@@ -119,6 +119,15 @@ const Contact = () => {
             </div>
 
             <div className="info-card">
+              <div className="info-icon">✉️</div>
+              <div className="info-content">
+                <h3>Email</h3>
+                <a href="mailto:sr.standard@yahoo.com" className="email-link">sr.standard@yahoo.com</a>
+                <p className="phone-note">Send us your queries anytime</p>
+              </div>
+            </div>
+
+            <div className="info-card">
               <div className="info-icon">🕐</div>
               <div className="info-content">
                 <h3>Business Hours</h3>

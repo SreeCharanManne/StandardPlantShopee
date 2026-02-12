@@ -358,6 +358,26 @@
   }
 }
 
+.hero-tagline {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-style: italic;
+  animation: fadeInLeft 0.8s ease-out 0.3s backwards, taglinePulse 4s ease-in-out infinite;
+}
+
+@keyframes taglinePulse {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  50% {
+    opacity: 0.9;
+    text-shadow: 0 0 20px rgba(45, 90, 39, 0.3);
+  }
+}
+
 .hero-subtitle {
   font-size: 1.3rem;
   color: var(--secondary-color);
