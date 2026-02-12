@@ -48,6 +48,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -147,4 +149,79 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Better touch targets */
+a, button {
+  min-height: 44px;
+}
+
+/* Smooth tap highlight */
+* {
+  -webkit-tap-highlight-color: rgba(45, 90, 39, 0.1);
+}
+
+/* Safe area for notched phones */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
+}
+
+/* Prevent zoom on input focus (iOS) */
+@media (max-width: 768px) {
+  input, textarea, select {
+    font-size: 16px !important;
+  }
 }
