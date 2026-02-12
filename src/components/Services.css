@@ -1,0 +1,141 @@
+.services {
+  background-color: var(--cream);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  background-color: var(--white);
+  padding: 35px 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(45, 90, 39, 0.15);
+  border-color: var(--accent-color);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: inline-block;
+  background: linear-gradient(135deg, var(--light-green), #c8e6c9);
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.service-description {
+  color: var(--light-text);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.service-features {
+  list-style: none;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--light-green);
+}
+
+.service-features li:last-child {
+  border-bottom: none;
+}
+
+.service-features .check {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.services-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 40px 50px;
+  border-radius: 20px;
+  color: var(--white);
+}
+
+.cta-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.cta-content p {
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.services-cta .btn-primary {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.services-cta .btn-primary:hover {
+  background-color: var(--light-green);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    padding: 25px 20px;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+}
