@@ -20,7 +20,7 @@ const Hero = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY',
+          access_key: 'daa3528d-bd9d-4041-8cd4-9e1254aedfa7',
           name: formData.name,
           phone: formData.phone,
           message: formData.message,
