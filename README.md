@@ -1,6 +1,6 @@
-# 🌿 Standard Plant Shoppe
+# 🌿 Standard Green Solutions
 
-A modern, responsive website for Standard Plant Shoppe - Vijayawada's Premier Wholesale Plant Nursery.
+A modern, responsive website for Standard Green Solutions — Vijayawada's trusted name in comprehensive plantation and landscaping solutions.
 
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
@@ -10,22 +10,27 @@ A modern, responsive website for Standard Plant Shoppe - Vijayawada's Premier Wh
 
 ## 🌱 About
 
-Standard Plant Shoppe is a wholesale plant nursery located in Vijayawada, Andhra Pradesh, India. This website showcases:
+Standard Green Solutions (స్టాండర్డ్ గ్రీన్ సొల్యూషన్స్) is a comprehensive plantation and landscaping company located in Vijayawada, Andhra Pradesh, India. We transform outdoor spaces into vibrant, sustainable, and functional green spaces.
 
-- Wide variety of indoor & outdoor plants
-- Organic soil and eco-friendly gardening products
-- Professional landscaping services
-- Plant rental for events and occasions
+### What We Offer
+- Complete landscaping & irrigation systems
+- Indoor & outdoor plantation services
+- Miyawaki forest creation
+- Plant protection & maintenance contracts
+- Specialty projects: vertical gardens, roof gardens, pergolas, waterfalls & more
+- Wide variety of plants, organic soil, and eco-friendly gardening products
 
 ## ✨ Features
 
-- **Responsive Design** - Works beautifully on desktop, tablet, and mobile
-- **Modern UI** - Clean, plant-themed design with smooth animations
-- **Interactive Gallery** - Filter plants by category (Indoor, Outdoor, Flowering, Succulents, Pots)
-- **Google Maps Integration** - Embedded map showing store location
-- **Contact Form** - Direct email inquiries using Web3Forms
-- **Customer Reviews** - Display customer testimonials
-- **Business Information** - Hours, location, phone, and popular times
+- **Responsive Design** — Works beautifully on desktop, tablet, and mobile
+- **Modern UI** — Clean, plant-themed design with smooth CSS animations
+- **Horizontal Gallery Carousel** — Drag-to-scroll plant collection with category filters
+- **Recent Works Showcase** — Infinite auto-scrolling marquee displaying 36 project photos in 3 rows
+- **Auto-Sliding Reviews** — Testimonial carousel with rating card and auto-play
+- **Animated CTA Buttons** — Pulsing glow and pointer animations for engagement
+- **Google Maps Integration** — Embedded map showing store location
+- **Contact Form** — Direct email inquiries using Web3Forms
+- **Smooth Scroll Navigation** — Fixed header with section links
 
 ## 🚀 Getting Started
 
@@ -76,43 +81,49 @@ To enable the contact form:
 ```
 src/
 ├── components/
-│   ├── Header.tsx      # Navigation header
-│   ├── Hero.tsx        # Hero section with animated plant cards
-│   ├── About.tsx       # About us section
-│   ├── Services.tsx    # Services offered
-│   ├── Gallery.tsx     # Plant gallery with filters
-│   ├── Reviews.tsx     # Customer reviews
-│   ├── Contact.tsx     # Contact info, map, and form
-│   └── Footer.tsx      # Footer with links
-├── App.tsx             # Main app component
-├── main.tsx            # Entry point
-└── index.css           # Global styles & CSS variables
+│   ├── Header.tsx         # Fixed navigation header with smooth scroll
+│   ├── Hero.tsx           # Hero section with animated plant cards
+│   ├── About.tsx          # About us section with company story
+│   ├── Services.tsx       # Core services + special projects grid
+│   ├── Gallery.tsx        # Horizontal carousel with category filters
+│   ├── Clients.tsx        # Client logos and partnerships
+│   ├── RecentWorks.tsx    # Infinite marquee of 36 project photos
+│   ├── Reviews.tsx        # Auto-sliding testimonial carousel
+│   ├── Contact.tsx        # Contact info, map, and inquiry form
+│   └── Footer.tsx         # Footer with links and social
+├── imgs/                  # 36 recent work project photos
+├── App.tsx                # Main app component
+├── main.tsx               # Entry point
+└── index.css              # Global styles & CSS variables
 ```
 
 ## 🎨 Tech Stack
 
-- **React 18** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **CSS3** - Styling with custom properties
-- **Amazon Ember** - Typography
-- **Web3Forms** - Contact form emails
-- **Google Maps Embed** - Location map
+- **React 18** — UI library
+- **TypeScript** — Type safety
+- **Vite** — Build tool and dev server
+- **CSS3** — Styling with custom properties and keyframe animations
+- **Google Fonts** — Playfair Display + Poppins typography
+- **Web3Forms** — Contact form emails
+- **Google Maps Embed** — Location map
 
 ## 📍 Business Information
 
-**Standard Plant Shoppe**  
-5Route, Dr Ramesh Hospital Rd,  
-opp. ITI College, Prashant Nagar,  
-LIC Colony, Vijayawada,  
+**Standard Green Solutions**
+స్టాండర్డ్ గ్రీన్ సొల్యూషన్స్
+
+5Route, Dr Ramesh Hospital Rd,
+opp. ITI College, Prashant Nagar,
+LIC Colony, Vijayawada,
 Andhra Pradesh 520008, India
 
-📞 **Phone:** +91 94906 58259  
-🕐 **Hours:** 9:00 AM - 8:00 PM (All days)
+📞 **Phone:** +91 94906 58259
+🕐 **Hours:** 9:00 AM – 8:00 PM (All days)
+⭐ **Google Rating:** 4.5
 
 ## 📄 License
 
-This project is private and proprietary to Standard Plant Shoppe.
+This project is private and proprietary to Standard Green Solutions.
 
 ## 👤 Developer
 
