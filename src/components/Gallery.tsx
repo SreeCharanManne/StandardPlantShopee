@@ -1,8 +1,14 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './Gallery.css';
 
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState('all');
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
   const categories = [
     { id: 'all', name: 'All Plants' },
@@ -31,6 +37,59 @@ const Gallery = () => {
     ? plants 
     : plants.filter(plant => plant.category === activeFilter);
 
+  const checkScrollPosition = () => {
+    if (!scrollRef.current) return;
+    const { scrollLeft: sl, scrollWidth, clientWidth } = scrollRef.current;
+    setCanScrollLeft(sl > 5);
+    setCanScrollRight(sl < scrollWidth - clientWidth - 5);
+  };
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft = 0;
+    }
+    // Small delay to let DOM update
+    setTimeout(checkScrollPosition, 50);
+  }, [activeFilter]);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (el) {
+      el.addEventListener('scroll', checkScrollPosition);
+      checkScrollPosition();
+      return () => el.removeEventListener('scroll', checkScrollPosition);
+    }
+  }, []);
+
+  const scrollBy = (direction: 'left' | 'right') => {
+    if (!scrollRef.current) return;
+    const amount = 320;
+    scrollRef.current.scrollBy({
+      left: direction === 'left' ? -amount : amount,
+      behavior: 'smooth',
+    });
+  };
+
+  // Drag to scroll
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!scrollRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
   return (
     <section id="gallery" className="gallery section">
       <div className="container">
@@ -50,24 +109,49 @@ const Gallery = () => {
             </button>
           ))}
         </div>
+      </div>
 
-        <div className="gallery-grid">
-          {filteredPlants.map(plant => (
-            <div key={plant.id} className="gallery-item">
-              <div className="gallery-image">
-                <img src={plant.image} alt={plant.name} loading="lazy" />
+      <div className="gallery-carousel-wrapper">
+        {canScrollLeft && (
+          <button className="carousel-arrow carousel-arrow-left" onClick={() => scrollBy('left')}>
+            ‹
+          </button>
+        )}
+
+        <div
+          className={`gallery-carousel ${isDragging ? 'dragging' : ''}`}
+          ref={scrollRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+        >
+          {filteredPlants.map((plant) => (
+            <div key={plant.id} className="gallery-card">
+              <div className="gallery-card-image">
+                <img src={plant.image} alt={plant.name} loading="lazy" draggable={false} />
+                <div className="gallery-card-overlay">
+                  <a href="#contact" className="btn btn-primary" onClick={(e) => isDragging && e.preventDefault()}>
+                    Enquire Now
+                  </a>
+                </div>
               </div>
-              <div className="gallery-info">
-                <h4 className="plant-title">{plant.name}</h4>
-                <span className="plant-category">{plant.category}</span>
-              </div>
-              <div className="gallery-overlay">
-                <a href="#contact" className="btn btn-primary">Enquire Now</a>
+              <div className="gallery-card-info">
+                <h4 className="gallery-card-title">{plant.name}</h4>
+                <span className="gallery-card-category">{plant.category}</span>
               </div>
             </div>
           ))}
         </div>
 
+        {canScrollRight && (
+          <button className="carousel-arrow carousel-arrow-right" onClick={() => scrollBy('right')}>
+            ›
+          </button>
+        )}
+      </div>
+
+      <div className="container">
         <div className="gallery-note">
           <p>
             <span className="note-icon">💡</span>

@@ -13,7 +13,7 @@ const Footer = () => {
   ];
 
   const services = [
-    'Complete Landscaping',
+    'Landscaping',
     'Irrigation Systems',
     'Indoor Plantation',
     'Miyawaki Forests',

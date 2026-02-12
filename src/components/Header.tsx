@@ -18,6 +18,7 @@ const Header = () => {
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Gallery', href: '#gallery' },
+    { name: 'Recent Works', href: '#recent-works' },
     { name: 'Reviews', href: '#reviews' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -37,8 +38,8 @@ const Header = () => {
           <ul className="nav-list">
             {navLinks.map((link) => (
               <li key={link.name} className="nav-item">
-                <a 
-                  href={link.href} 
+                <a
+                  href={link.href}
                   className="nav-link"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -49,12 +50,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <a href="tel:+919490658259" className="header-phone">
-          <span className="phone-icon">📞</span>
-          <span className="phone-number">+91 94906 58259</span>
-        </a>
-
-        <button 
+        <button
           className={`mobile-menu-btn ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"

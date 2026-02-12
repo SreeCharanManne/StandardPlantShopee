@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Clients from './components/Clients';
 import Gallery from './components/Gallery';
+import RecentWorks from './components/RecentWorks';
 import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -17,10 +18,11 @@ function App() {
         <Hero />
         <About />
         <Services />
-        <Clients />
         <Gallery />
+        <RecentWorks />
         <Reviews />
         <Contact />
+        <Clients />
       </main>
       <Footer />
     </div>

@@ -4,7 +4,7 @@ const Services = () => {
   const coreServices = [
     {
       icon: '🌳',
-      title: 'Complete Landscaping',
+      title: 'Landscaping',
       description: 'Land clearing, levelling, adding compost/manure, preparing soil beds, supplying and planting of all varieties of plants.',
       features: ['Land preparation', 'Soil bed design', 'Plant installation']
     },
@@ -78,7 +78,7 @@ const Services = () => {
         </div>
 
         <div className="special-projects">
-          <h3 className="special-projects-title">🎨 Transformations We Create</h3>
+          <h3 className="special-projects-title">Transformations We Create</h3>
           <p className="special-projects-subtitle">From bare to beautiful — explore our signature projects</p>
           <div className="special-projects-grid">
             {specialProjects.map((project, index) => (
@@ -93,11 +93,15 @@ const Services = () => {
 
         <div className="services-cta">
           <div className="cta-content">
-            <h3>Green Project Consultancy</h3>
-            <p>Expert advice for government, corporate, real estate, and institutional plantation projects</p>
+            <h3>Let's Build Your Green Vision 🌱</h3>
+            <p>Expert consultancy for government, corporate, real estate, and institutional plantation projects</p>
           </div>
-          <a href="#contact-form" className="btn btn-primary">Get a Quote</a>
-        </div>
+          <div className="cta-button-wrapper">
+            <span className="cta-pointer">👉</span>
+            <a href="#contact-form" className="btn btn-primary cta-pulse-btn">Get a Quote</a>
+            <span className="cta-pointer right">👉</span>
+          </div>
+        </div> 
       </div>
     </section>
   );

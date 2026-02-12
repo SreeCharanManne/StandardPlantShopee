@@ -83,7 +83,7 @@ const Hero = () => {
           <div className="hero-features">
             <div className="hero-feature">
               <span className="feature-icon">🌳</span>
-              <span>Complete Landscaping</span>
+              <span>Landscaping</span>
             </div>
             <div className="hero-feature">
               <span className="feature-icon">💧</span>

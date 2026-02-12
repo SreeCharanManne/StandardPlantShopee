@@ -2,16 +2,16 @@ import './About.css';
 
 const About = () => {
   const stats = [
-    { number: '10+', label: 'Years Experience' },
+    { number: '15+', label: 'Years Experience' },
     { number: '500+', label: 'Plant Varieties' },
     { number: '1000+', label: 'Happy Customers' },
-    { number: '4.5', label: 'Star Rating' },
+    { number: '4.5 ⭐', label: 'Rating' },
   ];
 
   const highlights = [
     {
       icon: '🌳',
-      title: 'Complete Landscaping',
+      title: 'Landscaping',
       description: 'Land clearing, levelling, soil preparation, and planting of all plant varieties'
     },
     {
@@ -61,7 +61,7 @@ const About = () => {
             </div>
 
             <div className="about-mission">
-              <h4>🎯 Our Mission</h4>
+              <h4> Our Mission</h4>
               <p>
                 To create sustainable and aesthetically pleasing green spaces that enhance the 
                 environment and improve quality of life. We are committed to innovative plantation 
