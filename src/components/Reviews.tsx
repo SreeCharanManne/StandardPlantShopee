@@ -67,7 +67,7 @@ const Reviews = () => {
               <div className="rating-stars">
                 {renderStars(5)}
               </div>
-              <span className="rating-count">31 reviews</span>
+              <span className="rating-count"></span>
             </div>
           </div>
           <div className="rating-highlights">
@@ -102,7 +102,7 @@ const Reviews = () => {
         <div className="reviews-cta">
           <p>Loved our service? Leave us a review!</p>
           <a 
-            href="https://www.google.com/maps" 
+            href="https://www.google.com/search?sca_esv=dcb567104b2294d0&rlz=1C5GCEM_enUS1116US1116&sxsrf=ANbL-n5e-dBl6cwEmuWjSbYHopVViOi6dw:1770872459928&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOTCWfwxD3aePDwUK9DDCGTcYOI581TrHqYgfv-_nvkn7vANqMM1pziLX_80Y0wgi3MsQrNw1OXOn6pvlXOi7krNNmmm6MQc8j9NyE9PNLNWG_HAk8g%3D%3D&q=Standard+Plant+Shoppe+Reviews&sa=X&ved=2ahUKEwi1nqr_ldOSAxVXL1kFHauNLzUQ0bkNegQIOxAF&biw=1728&bih=962&dpr=2" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn btn-secondary"

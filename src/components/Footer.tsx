@@ -41,7 +41,7 @@ const Footer = () => {
               </p>
               <div className="footer-rating">
                 <span className="stars">⭐⭐⭐⭐⭐</span>
-                <span className="rating-text">4.5 Rating • 31 Reviews</span>
+                <span className="rating-text">4.5 Rating</span>
               </div>
             </div>
 

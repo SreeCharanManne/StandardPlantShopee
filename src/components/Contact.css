@@ -86,14 +86,18 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
+  gap: 15px;
 }
 
 .hours-item .day {
   color: var(--text-color);
+  min-width: 90px;
+  flex-shrink: 0;
 }
 
 .hours-item .hours {
   color: var(--light-text);
+  text-align: right;
 }
 
 .popular-times-card {

@@ -118,7 +118,7 @@ const Contact = () => {
             <div className="popular-times-card">
               <h3>
                 <span className="times-icon">📊</span>
-                Popular Times - Thursdays
+                Popular Times
               </h3>
               <div className="times-chart">
                 {popularTimes.map((item, index) => (
@@ -133,7 +133,7 @@ const Contact = () => {
               </div>
               <p className="times-note">
                 <span className="live-indicator"></span>
-                Currently: Not busy
+                You are always Welcome!!
               </p>
             </div>
           </div>
@@ -182,7 +182,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact-form-section">
+        <div id="contact-form" className="contact-form-section">
           <h3>📬 Send Us a Message</h3>
           <p className="form-subtitle">Have questions about plants or want to place an order? Fill out the form below and we'll get back to you!</p>
           

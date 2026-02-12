@@ -71,7 +71,7 @@ const Services = () => {
             <h3>Need Custom Landscaping?</h3>
             <p>We offer personalized landscaping solutions with modern ideas at affordable prices</p>
           </div>
-          <a href="#contact" className="btn btn-primary">Get a Quote</a>
+          <a href="#contact-form" className="btn btn-primary">Get a Quote</a>
         </div>
       </div>
     </section>
