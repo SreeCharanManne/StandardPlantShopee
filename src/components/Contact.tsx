@@ -23,21 +23,39 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          access_key: 'daa3528d-bd9d-4041-8cd4-9e1254aedfa7', // Replace with your Web3Forms access key
-          subject: `New inquiry from ${formData.name} - Standard Plant Shoppe`,
-          from_name: formData.name,
-          ...formData
-        }),
-      });
+    // Two access keys for two different email recipients
+    const accessKeys = [
+      'daa3528d-bd9d-4041-8cd4-9e1254aedfa7', // Primary email (from Web3Forms dashboard)
+      '60681bfb-7c0a-47b2-9541-434d9dcad2ab', // Second email - Create new access key at web3forms.com for this email
+    ];
 
-      if (response.ok) {
+    const formPayload = {
+      subject: `New inquiry from ${formData.name} - Standard Plant Shoppe`,
+      from_name: formData.name,
+      ...formData
+    };
+
+    try {
+      // Submit to both access keys in parallel
+      const responses = await Promise.all(
+        accessKeys.map(access_key =>
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              access_key,
+              ...formPayload
+            }),
+          })
+        )
+      );
+
+      // Check if at least one submission succeeded
+      const anySuccess = responses.some(response => response.ok);
+
+      if (anySuccess) {
         setSubmitStatus('success');
         setFormData({ name: '', phone: '', email: '', message: '' });
       } else {
