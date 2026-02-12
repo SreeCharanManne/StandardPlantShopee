@@ -6,6 +6,8 @@ A modern, responsive website for Standard Plant Shoppe - Vijayawada's Premier Wh
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?logo=vite)
 
+🌐 **Live Site:** [https://standard-plant-shopee.vercel.app/](https://standard-plant-shopee.vercel.app/)
+
 ## 🌱 About
 
 Standard Plant Shoppe is a wholesale plant nursery located in Vijayawada, Andhra Pradesh, India. This website showcases:
